@@ -1,0 +1,27 @@
+{
+	"changeLogs": {
+		"BDFDB": "2.1.3",
+		"BetterNsfwTag": "1.2.7",
+		"GameActivityToggle": "1.0.4",
+		"ImageUtilities": "4.5.2",
+		"OldTitleBar": "1.7.1",
+		"ServerDetails": "1.1.1",
+		"ShowBadgesInChat": "1.8.1",
+		"ShowHiddenChannels": "3.0.4",
+		"SplitLargeMessages": "1.7.0",
+		"SpotifyControls": "1.2.4",
+		"StaffTag": "1.4.8"
+	},
+	"choices": {
+		"toastPosition": "right"
+	},
+	"general": {
+		"showToasts": true,
+		"showSupportBadges": true,
+		"useChromium": false
+	},
+	"hashes": {
+		"0BDFDB.data.json": "9bb8cc01e640a900d7c2e3ea6c85da87fa0ec7d6",
+		"0BDFDB.raw.css": "a1036e10077b9457f3903795204f7dbd91d7646d"
+	}
+}

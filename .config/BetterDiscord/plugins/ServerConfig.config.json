@@ -1,0 +1,22 @@
+{
+    "currentVersionInfo": {
+        "version": "1.0.0",
+        "hasShownChangelog": true
+    },
+    "has_seen_settings": true,
+    "settings": {
+        "notification": {
+            "muted": false,
+            "message_notifications": 1,
+            "suppress_everyone": true,
+            "suppress_roles": false,
+            "mobile_push": true
+        },
+        "nickname": {
+            "nick": ""
+        },
+        "experimental": {
+            "terms": false
+        }
+    }
+}
