@@ -2,7 +2,7 @@
  * @name ShowBadgesInChat
  * @author DevilBro
  * @authorId 278543574059057154
- * @version 1.8.2
+ * @version 1.8.4
  * @description Displays Badges (Nitro, Hypesquad, etc...) in the Chat/MemberList/DMList
  * @invite Jx3TjNS
  * @donate https://www.paypal.me/MircoWittrien
@@ -17,20 +17,12 @@ module.exports = (_ => {
 		"info": {
 			"name": "ShowBadgesInChat",
 			"author": "DevilBro",
-			"version": "1.8.2",
+			"version": "1.8.4",
 			"description": "Displays Badges (Nitro, Hypesquad, etc...) in the Chat/MemberList/DMList"
 		}
 	};
 	
-	return (window.Lightcord && !Node.prototype.isPrototypeOf(window.Lightcord) || window.LightCord && !Node.prototype.isPrototypeOf(window.LightCord) || window.Astra && !Node.prototype.isPrototypeOf(window.Astra)) ? class {
-		getName () {return config.info.name;}
-		getAuthor () {return config.info.author;}
-		getVersion () {return config.info.version;}
-		getDescription () {return "Do not use LightCord!";}
-		load () {BdApi.alert("Attention!", "By using LightCord you are risking your Discord Account, due to using a 3rd Party Client. Switch to an official Discord Client (https://discord.com/) with the proper BD Injection (https://betterdiscord.app/)");}
-		start() {}
-		stop() {}
-	} : !window.BDFDB_Global || (!window.BDFDB_Global.loaded && !window.BDFDB_Global.started) ? class {
+	return !window.BDFDB_Global || (!window.BDFDB_Global.loaded && !window.BDFDB_Global.started) ? class {
 		getName () {return config.info.name;}
 		getAuthor () {return config.info.author;}
 		getVersion () {return config.info.version;}
@@ -293,15 +285,18 @@ module.exports = (_ => {
 					let childrenRender = e.returnvalue.props.children;
 					e.returnvalue.props.children = BDFDB.TimeUtils.suppress((...args) => {
 						let children = childrenRender(...args);
-						children.props.decorators = [children.props.decorators].flat(10);
-						this.injectBadges(children.props.decorators, e.instance.props.user, null, "dms");
+						this._processPrivateChannel(e.instance, children);
 						return children;
-					}, "", this);
+					}, "Error in Children Render of PrivateChannel!", this);
 				}
-				else {
-					e.returnvalue.props.decorators = [e.returnvalue.props.decorators].flat(10);
-					this.injectBadges(e.returnvalue.props.decorators, e.instance.props.user, null, "dms");
-				}
+				else this._processPrivateChannel(e.instance, e.returnvalue);
+			}
+
+			_processPrivateChannel (instance, returnvalue, a) {
+				const wrapper = returnvalue.props.decorators ? returnvalue : BDFDB.ReactUtils.findChild(returnvalue, {props: ["decorators"]}) || returnvalue;
+				if (!wrapper) return;
+				wrapper.props.decorators = [wrapper.props.decorators].flat(10);
+				this.injectBadges(wrapper.props.decorators, instance.props.user, null, "dms");
 			}
 			
 			processUserProfileBadgeList (e) {

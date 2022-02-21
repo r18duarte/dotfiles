@@ -1,4 +1,4 @@
 #script para fazer symlinks
-ln -sf ~/dotfiles/.vim_runtime ~/
+ln -sf ~/dotfiles/.vim ~/
 ln -sf ~/dotfiles/.vimrc ~/.vimrc
 ln -sf ~/dotfiles/.config ~/

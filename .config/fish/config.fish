@@ -4,3 +4,4 @@ if status is-interactive
     neofetch
 end
 export PATH="$PATH:$HOME/.spicetify"
+export TERM=xterm-256color

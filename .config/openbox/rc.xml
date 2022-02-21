@@ -33,10 +33,10 @@
       <slant>Normal</slant>
     </font>
     <font place="InactiveWindow">
-      <name>JetBrains Mono</name>
+      <name>JetBrains Mono Thin</name>
       <size>9</size>
       <weight>Normal</weight>
-      <slant>Normal</slant>
+      <slant>Italic</slant>
     </font>
     <font place="MenuHeader">
       <name>JetBrains Mono</name>
@@ -64,7 +64,7 @@
     </font>
   </theme>
   <desktops>
-    <number>5</number>
+    <number>4</number>
     <firstdesk>0</firstdesk>
     <names>
       <name>1</name>
@@ -73,7 +73,7 @@
       <name>4</name>
       <name>5</name>
     </names>
-    <popupTime>0</popupTime>
+    <popupTime>875</popupTime>
   </desktops>
   <resize>
     <drawContents>yes</drawContents>
@@ -96,7 +96,7 @@
     <floatingY>0</floatingY>
     <noStrut>no</noStrut>
     <stacking>Above</stacking>
-    <direction>Vertical</direction>
+    <direction>Horizontal</direction>
     <autoHide>no</autoHide>
     <hideDelay>300</hideDelay>
     <showDelay>300</showDelay>
@@ -640,7 +640,7 @@
   </keyboard>
   <!-- ################################ Mouse Settings ################################ -->
   <mouse>
-    <dragThreshold>4</dragThreshold>
+    <dragThreshold>5</dragThreshold>
     <doubleClickTime>400</doubleClickTime>
     <screenEdgeWarpTime>600</screenEdgeWarpTime>
     <screenEdgeWarpMouse>false</screenEdgeWarpMouse>
@@ -691,7 +691,7 @@
         </action>
       </mousebind>
       <mousebind action="DoubleClick" button="Left">
-        <action name="ToggleMaximizeFull"/>
+        <action name="ToggleShade"/>
       </mousebind>
       <mousebind action="Click" button="Up">
         <action name="if">

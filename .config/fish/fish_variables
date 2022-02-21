@@ -1,6 +1,7 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR __fish_initialized:3100
+SETUVAR _fish_abbr_ls:ls\x20\x2dlha
 SETUVAR _fish_abbr_paci:sudo\x20pacman\x20\x2dS
 SETUVAR _fish_abbr_pacr:sudo\x20pacman\x20\x2dRn
 SETUVAR _fish_abbr_pacremun:sudo\x20pacman\x20\x2dR\x20\x28pacman\x20\x2dQdtq\x29
