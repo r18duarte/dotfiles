@@ -126,6 +126,9 @@ set undoreload=10000
 " Set foldmethod
 set foldmethod=marker
 
+" Set fish shell on vim term
+set shell=/usr/bin/fish
+
 " }}}
 
 
