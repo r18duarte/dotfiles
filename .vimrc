@@ -15,7 +15,7 @@ set runtimepath+=~/.vim
 set nocompatible
 
 " required
-filetype off
+filetype on
 
 " => Load plugins to VIM using vim-plug
 "{{{
@@ -107,6 +107,7 @@ set noswapfile
 
 " Search current directory recursively
 set path+=**
+set path+=.*
 
 " Display all matches when tab complete and way from longest
 set wildmenu
