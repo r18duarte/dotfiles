@@ -1,4 +1,4 @@
-2022-02-07	rc.xml KEYBINDS
+2022-02-24	rc.xml KEYBINDS
 -------------------------------
 
  0	W-1           				GoToDesktop
@@ -47,9 +47,9 @@
 43	XF86AudioLowerVolume	volume --dec
 44	XF86AudioMute  			volume --toggle
 45	XF86AudioStop  			mpc stop
-46	XF86AudioPlay  			mpc toggle
-47	XF86AudioPrev  			mpc prev
-48	XF86AudioNext  			mpc next
+46	XF86AudioPlay  			dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpr.....
+47	XF86AudioPrev  			dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpr.....
+48	XF86AudioNext  			dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpr.....
 49	XF86MonBrightnessUp	brightness --inc
 50	XF86MonBrightnessDown	brightness --dec
 51	Print         				takeshot --now

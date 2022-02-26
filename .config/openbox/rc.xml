@@ -482,11 +482,6 @@
         <command>furminal</command>
       </action>
     </keybind>
-    <keybind key="W-f">
-      <action name="Execute">
-        <command>thunar</command>
-      </action>
-    </keybind>
     <keybind key="W-w">
       <action name="Execute">
         <command>google-chrome-stable</command>
