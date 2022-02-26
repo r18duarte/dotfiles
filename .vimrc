@@ -64,7 +64,7 @@ call plug#begin()
     " Code completion engine
     Plug 'valloric/youcompleteme'
 
-    "Git commands inside VIM
+    " Git commands inside VIM
     Plug 'tpope/vim-fugitive'
 
 call plug#end()
@@ -95,7 +95,7 @@ set autoread
 au FocusGained,BufEnter * checktime
 
 " Enable syntax highlight
-syntax enable
+"syntax enable
 
 " Set leader for key combinations
 let mapleader = ","
