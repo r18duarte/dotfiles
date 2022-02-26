@@ -19,7 +19,7 @@
 	"general": {
 		"resizeImage": true,
 		"addDetails": true,
-		"showAsHeader": true,
+		"showInDescription": true,
 		"showOnHover": false,
 		"enableGallery": true,
 		"enableZoom": true,
@@ -34,7 +34,7 @@
 		"emojis": true
 	},
 	"zoomSettings": {
-		"lensSize": 200,
-		"zoomLevel": 2.8000000000000007
+		"zoomLevel": 2.8000000000000007,
+		"lensSize": 200
 	}
 }

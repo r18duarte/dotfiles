@@ -6,7 +6,7 @@
 		"ImageUtilities": "4.5.2",
 		"OldTitleBar": "1.7.1",
 		"ServerDetails": "1.1.1",
-		"ShowBadgesInChat": "1.8.1",
+		"ShowBadgesInChat": "1.8.6",
 		"ShowHiddenChannels": "3.0.6",
 		"SplitLargeMessages": "1.7.0",
 		"SpotifyControls": "1.2.4",
@@ -21,7 +21,7 @@
 		"useChromium": false
 	},
 	"hashes": {
-		"0BDFDB.data.json": "dc987925ad7472d1e68f70da9dfbdd3199105179",
+		"0BDFDB.data.json": "1b2ef6f43a470b39b4119aa8aeb5077b972c10ce",
 		"0BDFDB.raw.css": "a1036e10077b9457f3903795204f7dbd91d7646d"
 	}
 }
