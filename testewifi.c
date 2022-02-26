@@ -11,6 +11,7 @@ int main()
     a = a+b;
     b=c - a ;
     printf("%i, %i", a, b);
+    printf("Wifi n sabe mexer nisto");
     return 0;
-
+    
 }
