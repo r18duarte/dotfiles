@@ -31,6 +31,11 @@ launch_bar() {
 
 	# Launch the bar
 	polybar -q main -c "$DIR"/config.ini &
+
+    # Launch external bar
+    if [[ $(xrandr -q | grep 'DP-1-0 connected') ]]; then
+	    polybar external -c "$DIR"/config.ini &
+    fi
 }
 
 # Execute functions
