@@ -38,9 +38,6 @@ call plug#begin()
     " Lightline (bottom status bar)
     Plug 'itchyny/lightline.vim'
 
-    " Buffer explorer
-    Plug 'jlanzarotta/bufexplorer'
-
 " {{ FILE MANAGER }}
     " NERDTree -> file explorer (only loads when called)
     Plug 'preservim/NERDTree' 
@@ -50,6 +47,9 @@ call plug#begin()
 
     " Icons for NERDTree
     Plug 'ryanoasis/vim-devicons' 
+
+    " Buffer explorer
+    Plug 'jlanzarotta/bufexplorer'
 
 " {{ CODING }}
     " Surround automatically adds the other bracket " and so on
