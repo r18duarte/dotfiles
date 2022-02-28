@@ -1,4 +1,4 @@
-2022-02-26	rc.xml KEYBINDS
+2022-02-28	rc.xml KEYBINDS
 -------------------------------
 
  0	W-1           				GoToDesktop

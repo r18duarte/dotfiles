@@ -4,10 +4,14 @@
 ## Everyone is permitted to copy and distribute copies of this file under GNU-GPL3
 
 ## Kill if already running
-killall -9 xfsettingsd picom polybar mpd dunst ksuperkey xfce4-power-manager
+killall -9 xfsettingsd picom polybar dunst ksuperkey xfce4-power-manager
+
+if [[ $(xrandr -q | grep 'DP-1-0 connected') ]]; then
+    xrandr --output eDP1 --mode 1920x1080 -r 144.03 --rotate normal --output DP-1-0 --primary --mode 1920x1080 -r 164.5 --rotate normal --left-of eDP1
+fi
 
 ## Restore Wallpaper
-nitrogen --restore --restore
+nitrogen --restore
 
 ## xfce4-settings daemon
 xfsettingsd &
@@ -19,6 +23,8 @@ fi
 
 ## Enable power management
 xfce4-power-manager &
+
+sleep 2
 
 ## Start Compositing Manager
 exec picom &
