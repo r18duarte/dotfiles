@@ -1,12 +1,13 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
 - clean: ['~']
 
 - link:
-    ~/.bashrc:
-    ~/.bash_logout:
     ~/.gitconfig:
+    ~/.vim:
     ~/.vimrc: 
-    ~/.config/fish/:
-    ~/.config/alacritty/:
-
-
-
+    ~/.config/fish:
+    ~/.config/alacritty:
