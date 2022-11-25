@@ -1,9 +1,12 @@
 - clean: ['~']
 
 - link:
-    ~/.bashrc: bashrc
-    ~/.bash_logout: bash_logout
-    ~/.gitconfig: gitconfig
-    ~/.vimrc: vimrc
+    ~/.bashrc:
+    ~/.bash_logout:
+    ~/.gitconfig:
+    ~/.vimrc: 
+    ~/.config/fish/:
+    ~/.config/alacritty/:
+
 
 
