@@ -3,7 +3,7 @@ Made with [dotbot](https://github.com/anishathalye/dotbot). Which is a great too
 
 *Install script:* 
 
-    git clone https://github.com/r18duarte .dotfiles && cd .dotfiles && ./install
+    git clone https://github.com/r18duarte/dotfiles .dotfiles && cd .dotfiles && ./install
     
    
 
