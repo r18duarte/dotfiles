@@ -1,6 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR __fish_initialized:3100
+SETUVAR __fish_initialized:3400
 SETUVAR _fish_abbr_apti:sudo\x20apt\x20install
 SETUVAR _fish_abbr_aptr:sudo\x20apt\x20remove
 SETUVAR _fish_abbr_aptrun:sudo\x20apt\x20autoremove
@@ -39,4 +39,5 @@ SETUVAR fish_pager_color_completion:normal
 SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:normal\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
-SETUVAR fish_user_paths:/home/dax/\x2elocal/lib/python3\x2e10/site\x2dpackages
+SETUVAR fish_pager_color_selected_background:\x2dr
+SETUVAR fish_user_paths:/home/daxter/anaconda3/bin\x1e/home/dax/\x2elocal/lib/python3\x2e10/site\x2dpackages

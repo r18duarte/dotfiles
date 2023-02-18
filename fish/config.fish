@@ -18,3 +18,11 @@ function __fish_complete_pip
 end
 complete -fa "(__fish_complete_pip)" -c pip
 # pip fish completion end
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+if test -f /home/daxter/anaconda3/bin/conda
+    eval /home/daxter/anaconda3/bin/conda "shell.fish" "hook" $argv | source
+end
+# <<< conda initialize <<<
+
